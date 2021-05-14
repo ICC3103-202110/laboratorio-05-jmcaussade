@@ -1,15 +1,32 @@
 const {printTable} = require('console-table-printer');
 
-console.clear()
-const BillAmount = '$'+'constante x'
-const TipPercentage = 'constnate y'+'%'
-const Tip = '$'+'constante z'
-const TotalBill = '$'+'constane xy'
+
+const BillAmount = '$'+'0'
+const TipP = '0'+'%'
+const Tip = '$'+'0'
+const Total = '$'+'0'
+
 //CREATE TABLE 
 const Table1 = [
-    {"Bill Amount": BillAmount,  "Tip (%)": TipPercentage, "Tip": Tip,
-     "Total": TotalBill }
+    {"Bill Amount": BillAmount,  "Tip (%)": TipP, "Tip": Tip,
+     "Total": Total }
 ];
 
-printTable(Table1) //DONT PRINT TABLE HERE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {
+    Table1
+}
 
