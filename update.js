@@ -1,28 +1,37 @@
-const prompt = require ('prompt-sync')();
 
-//INPUT 
-const BillAmount = parseFloat(prompt('Bill amount? '));
-const TipP = prompt('Tip(%)? ');
+function PrintBillAmountU(){
+    return ' Bill amount? '
+};
 
-//MATH
-const Tip = parseFloat((BillAmount*TipP)/100);
-const Total = BillAmount + Tip;
+function PrintTipU(){
+    return ' Tip(%)? '
+};
 
+function TipU(bill, percentage){
+    const tip = parseFloat((bill*percentage)/100)
+    return tip
+};
 
-
-
-
-
-
-
-
-
+function SumTotalU(bill,tip){
+    const sum = bill+tip
+    return sum
+};
 
 
 
 module.exports = {
-    BillAmount,
-    TipP,
-    Tip,
-    Total
+    PrintBillAmountU,
+    PrintTipU,
+    TipU,
+    SumTotalU
 }
+
+
+
+
+
+
+
+
+
+
