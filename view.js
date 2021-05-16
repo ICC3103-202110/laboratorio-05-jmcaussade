@@ -1,23 +1,24 @@
 const {printTable} = require('console-table-printer');
 
-const BillAmount = '$0'
-const TipP = '0%'
-const Tip = '$0'
-const Total = '$0'
+var BillAmount = '$0';
+var TipP = '0%';
+var Tip = '$0';
+var Total = '$0';
 
 //CREATE TABLE 
-const Table1 = [
+/*const Table1 = [
     {"Bill Amount": BillAmount,  "Tip (%)": TipP, "Tip": Tip,
      "Total": Total }
-];
+];*/
 
 
-
-
-
-
-
-
+function Table(BillAmountC,TipPC, TipC, TotalC) {
+    var Table4 = [
+        {"Bill Amount": BillAmountC,  "Tip (%)": TipPC, "Tip": TipC,
+     "Total": TotalC }
+    ] 
+    return Table4;
+}
 
 
 
@@ -26,10 +27,11 @@ const Table1 = [
 
 
 module.exports = {
-    Table1,
     BillAmount,
     TipP,
     Tip,
-    Total
+    Total,
+    Table
+    
 }
 
