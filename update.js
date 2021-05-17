@@ -1,12 +1,4 @@
 
-function PrintBillAmountU(){
-    return ' Bill amount? '
-};
-
-function PrintTipU(){
-    return ' Tip(%)? '
-};
-
 function TipU(bill, percentage){
     const tip = parseFloat((bill*percentage)/100)
     return tip
@@ -29,8 +21,6 @@ function Update(p1, p2, p3, p4, n1, n2, n3, n4){
 }
 
 module.exports = {
-    PrintBillAmountU,
-    PrintTipU,
     TipU,
     SumTotalU,
     Update
