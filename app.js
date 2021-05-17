@@ -6,10 +6,9 @@ const {BillAmount,TipP,Tip,Total,Table,PrintBillAmountU, PrintTipU, getTitle} = 
 
 async function app(){
     console.clear();
-    let i = 0
     console.log(getTitle(getTitle))
     printTable(Table(BillAmount,TipP,Tip,Total))
-    while (i<2) {
+    while (true) {
       var BillAmountNew = await prompt(PrintBillAmountU());
       var TipPNew = await prompt(PrintTipU()); 
       var TipNew = TipU(BillAmountNew,TipPNew);
@@ -18,7 +17,7 @@ async function app(){
       console.clear();
       console.log(getTitle(getTitle))
       printTable(Table(List[0],List[1],List[2],List[3]))
-      i++;
+      ;
     } 
 }
 
