@@ -1,4 +1,6 @@
 const {printTable} = require('console-table-printer');
+const chalk = require('chalk');
+const figlet = require('figlet');
 
 var BillAmount = '$0';
 var TipP = '0%';
@@ -23,6 +25,19 @@ function PrintTipU(){
 };
 
 
+function getTitle(){
+    return chalk.blue(
+        figlet.textSync(
+            'Tip Calculator',
+            {
+                horizontalLayout: 'full',
+                font: 'ogre'
+            }
+        )
+    )
+}
+
+
 module.exports = {
     BillAmount,
     TipP,
@@ -30,7 +45,8 @@ module.exports = {
     Total,
     Table,
     PrintBillAmountU,
-    PrintTipU
+    PrintTipU,
+    getTitle
     
 }
 
