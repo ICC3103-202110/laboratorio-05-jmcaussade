@@ -12,10 +12,10 @@ function SumTotalU(bill,tip){
 };
 
 function Update(p1, p2, p3, p4, n1, n2, n3, n4){
-    var p1 = n1
-    var p2 = n2
-    var p3 = n3
-    var p4 = n4
+    var p1 = '$' + n1
+    var p2 = n2 + '%'
+    var p3 = '$' + n3
+    var p4 = '$' + n4
     list=[p1,p2,p3,p4]
     return list
 }
